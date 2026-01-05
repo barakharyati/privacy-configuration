@@ -32,7 +32,7 @@ jobs:
         steps:
             - name: Check if holiday period
               run: |
-                  if [ "$(date -u +%Y%m%d)" -lt "20250105" ]; then
+                  if [ "$(date -u +%Y%m%d)" -lt "20260105" ]; then
                       echo "::notice::Auto review bot disabled until Jan 5th 2026"
                       exit 1
                   fi
